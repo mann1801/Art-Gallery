@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery - Media</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <h3 class="ms-2">Art Gallery</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="art-fairs.html">Art Fairs</a></li>
+          <li class="nav-item"><a class="nav-link" href="exhibitions.html">Exhibitions</a></li>
+          <li class="nav-item"><a class="nav-link" href="learning.html">Learning Initiative</a></li>
+          <li class="nav-item"><a class="nav-link active" href="media.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="featured-media" class="py-5 text-white text-center fade-in" style="background-image: url('assets/parallax3.jpg'); background-size: cover; background-position: center;">
+    <h2 class="mb-4 mt-5">Media & Press</h2>
+      <p>Stay updated with our latest news, events, and media coverage.</p>
+    <div class="container mt-2">
+      
+      <div class="row">
+        <div class="col-md-4 fade-in">
+          <div class="card">
+            <img src="assets/news1.jpg" class="card-img-top" alt="Future of Space Museums">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;"> The Rise of Space Art Galleries</h5>
+              <p class="card-text" style="color: black;"> Published: February 2025</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Read More</button>
+            </div>
+          </div>
+        </div>
+     
+        <div class="col-md-4 fade-in">
+          <div class="card">
+            <img src="assets/news6.jpg" class="card-img-top" alt="Future of Space Museums">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;"> First Art Exhibit on the Moon Announced!</h5>
+              <p class="card-text" style="color: black;"> Published: January 2025</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Read More</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-md-4 fade-in">
+          <div class="card">
+            <img src="assets/news3.jpg" class="card-img-top" alt="Future of Space Museums">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;"> Virtual Reality Meets Space Art</h5>
+              <p class="card-text" style="color: black;"> Published: December 2024</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2 fade-in">
+          <div class="card">
+            <img src="assets/news4.jpg" class="card-img-top" alt="Future of Space Museums">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;"> AI-Generated Art Travels to Space</h5>
+              <p class="card-text" style="color: black;"> Published: March 2025</p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Read More</button>
+            </div>
+          </div>
+        </div>
+          
+          <div class="col-md-4 mt-2 fade-in">
+            <div class="card">
+              <img src="assets/news5.jpg" class="card-img-top" alt="Future of Space Museums">
+              <div class="card-body">
+                <h5 class="card-title" style="color: black;"> The First Zero-Gravity Art Performance</h5>
+                <p class="card-text" style="color: black;"> Published: February 2025</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Read More</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mt-2 fade-in">
+            <div class="card">
+              <img src="assets/news2.jpg" class="card-img-top" alt="Future of Space Museums">
+              <div class="card-body">
+                <h5 class="card-title" style="color: black;"> Mars to Host First Human Art Installation in 2030</h5>
+                <p class="card-text" style="color: black;"> Published: January 2025</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">Read More</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="modal1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label"> The Rise of Space Art Galleries</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img style="width: 400px; height: 350px;"  src="assets/news1.jpg" class="center mb-3 rounded" alt="Exploring Space Art">
+          <p>Art is no longer confined to Earth. As space travel becomes a reality, futuristic art galleries are emerging beyond our planet. Imagine floating exhibitions aboard space stations or lunar museums showcasing cosmic-inspired masterpieces. Leading artists and visionaries are working to merge technology with artistic expression, redefining how we experience art in zero gravity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label"> First Art Exhibit on the Moon Announced</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img style="width: 400px; height: 350px;" src="assets/news6.jpg" class="center mb-3 rounded" alt="Exploring Space Art">
+          <p>The world’s first lunar art gallery is set to launch in 2026! A collaboration between top space agencies and renowned artists, this project will feature sculptures designed to withstand the harsh lunar environment. Visitors—whether astronauts or future space tourists—will witness art like never before.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modal3">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label"> Virtual Reality Meets Space Art</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img style="width: 400px; height: 350px;" src="assets/news3.jpg" class="center mb-3 rounded" alt="Exploring Space Art">
+          <p>What if you could visit an art gallery orbiting Earth from your home? With advancements in virtual reality, space-inspired exhibits are now accessible to anyone. Explore stunning 3D-rendered galleries filled with artwork that reacts to cosmic data, like solar flares and planetary movements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal4">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label"> AI-Generated Art Travels to Space</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img style="width: 400px; height: 350px;" src="assets/news4.jpg" class="center mb-3 rounded" alt="Exploring Space Art">
+          <p>For the first time in history, AI-generated artwork is being displayed aboard the International Space Art Station (ISAS). Created using machine learning algorithms that analyze cosmic patterns, these digital masterpieces reflect the beauty of the universe in a way never seen before.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal5">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal5Label"> The First Zero-Gravity Art Performancet</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img style="width: 400px; height: 350px;" src="assets/news5.jpg" class="center mb-3 rounded" alt="Exploring Space Art">
+          <p>A team of space travelers and artists have just conducted the world’s first zero-gravity art performance aboard a commercial spaceflight. Using floating paint droplets and slow-motion brush techniques, they created an otherworldly masterpiece—proving that creativity knows no boundaries, even in microgravity!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal6">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal6Label"> Mars to Host First Human Art Installation in 2030</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img style="width: 400px; height: 350px;" src="assets/news2.jpg" class="center mb-3 rounded" alt="Exploring Space Art">
+          <p>As Mars colonization plans advance, artists are already preparing for the first permanent art installation on the Red Planet. The project, named "Echoes of Earth", will feature sculptures and paintings designed to withstand Martian conditions while telling the story of humanity’s journey into space.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <section class="py-5 fade-in" style="background-image: url('assets/parallax4.jpg'); background-size: cover;">
+    <div class="container text-center">
+      
+      <h2 class="mb-4 mt-2">Gallery Highlights</h2>
+      <div class="row">
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork.jpg" target="_blank">
+            <img src="assets/gwork.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork2.jpg" target="_blank">
+            <img src="assets/gwork2.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork3.jpg" target="_blank">
+            <img src="assets/gwork3.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork4.jpg" target="_blank">
+            <img src="assets/gwork4.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork5.jpg" target="_blank">
+            <img src="assets/gwork5.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork6.jpg" target="_blank">
+            <img src="assets/gwork6.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork7.jpg" target="_blank">
+            <img src="assets/gwork7.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork8.jpg" target="_blank">
+            <img src="assets/gwork8.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork9.jpg" target="_blank">
+            <img src="assets/gwork9.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork10.jpg" target="_blank">
+            <img src="assets/gwork10.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork11.jpg" target="_blank">
+            <img src="assets/gwork11.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork12.jpg" target="_blank">
+            <img src="assets/gwork12.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork13.jpg" target="_blank">
+            <img src="assets/gwork13.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+        <div class="col-4 mb-3 fade-in">
+          <a href="assets/gwork14.jpg" target="_blank">
+            <img src="assets/gwork14.jpg" class="gallery-img img-fluid">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-2">
+    <p>&copy; 2025 Art Gallery. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>

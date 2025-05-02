@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery - Artists</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <h3 class="ms-2">Art Gallery</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="art-fairs.html">Art Fairs</a></li>
+          <li class="nav-item"><a class="nav-link" href="exhibitions.html">Exhibitions</a></li>
+          <li class="nav-item"><a class="nav-link" href="learning.html">Learning Initiative</a></li>
+          <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="featured-artists section parallax" style="background-image: url('assets/parallax2.jpg');">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mt-4">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist1Modal">
+            <img src="assets/artist1.jpg" alt="Artist 1" class="artist-img">
+            <h2 style="color: aliceblue;">Frida Kahlo</h2>
+            <p style="color: aliceblue;">Contemporary Painter</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist2Modal">
+            <img src="assets/artist2.jpg" alt="Artist 2" class="artist-img">
+            <h2 style="color: aliceblue;">Kara Walker</h2>
+            <p style="color: aliceblue;">Sculpture Artist</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist3Modal">
+            <img src="assets/artist3.jpg" alt="Artist 3" class="artist-img">
+            <h2 style="color: aliceblue;">Jackson Pollock</h2>
+            <p style="color: aliceblue;">Photographer</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist4Modal">
+            <img src="assets/artist4.jpg" alt="Artist 4" class="artist-img">
+            <h2 style="color: aliceblue;">Yayoi Kusama</h2>
+            <p style="color: aliceblue;">Oil Painting Expert</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist5Modal">
+            <img src="assets/artist5.jpg" alt="Artist 5" class="artist-img">
+            <h2 style="color: aliceblue;">Andy Warhol</h2>
+            <p style="color: aliceblue;">Digital Illustrator</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist6Modal">
+            <img src="assets/artist6.jpg" alt="Artist 6" class="artist-img">
+            <h2 style="color: aliceblue;">Mary Cassatt</h2>
+            <p style="color: aliceblue;">Street Graffiti Artist</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist7Modal">
+            <img src="assets/artist7.jpg" alt="Artist 7" class="artist-img">
+            <h2 style="color: aliceblue;">Salvador Dalí</h2>
+            <p style="color: aliceblue;">Watercolor Specialist</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist8Modal">
+            <img src="assets/artist8.jpg" alt="Artist 8" class="artist-img">
+            <h2 style="color: aliceblue;">Frida Kahlo </h2>
+            <p style="color: aliceblue;">Conceptual Artist</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist9Modal">
+            <img src="assets/artist9.jpg" alt="Artist 9" class="artist-img">
+            <h2 style="color: aliceblue;">Louise Bourgeois</h2>
+            <p style="color: aliceblue;">Minimalist Art Creator</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist10Modal">
+            <img src="assets/artist10.jpg" alt="Artist 10" class="artist-img">
+            <h2 style="color: aliceblue;">Hilma af Klint</h2>
+            <p style="color: aliceblue;">Hyperrealism Expert</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist11Modal">
+            <img src="assets/artist11.jpg" alt="Artist 10" class="artist-img">
+            <h2 style="color: aliceblue;">Tamara de Lempicka</h2>
+            <p style="color: aliceblue;">Hyperrealism Expert</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+          <div class="artist-card text-center" data-bs-toggle="modal" data-bs-target="#artist12Modal">
+            <img src="assets/artist12.jpg" alt="Artist 10" class="artist-img">
+            <h2 style="color: aliceblue;">Pablo Picasso</h2>
+            <p style="color: aliceblue;">Hyperrealism Expert</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="artist1Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist1Label">Frida Kahlo - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist1.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Frida Kahlo is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/gwork.jpg" target="_blank">
+                <img src="assets/gwork.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/gwork2.jpg" target="_blank">
+                <img src="assets/gwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/gwork3.jpg" target="_blank">
+                <img src="assets/gwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div class="modal fade" id="artist2Modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="artist2Label">Kara Walker - Sculpture Artist</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/artist2.jpg" class="img-fluid mb-3 rounded">
+        <p><strong>Bio:</strong> Kara Walker is a sculpture artist specializing in stone and bronze sculptures.</p>
+        <p><strong>Art Style:</strong> Realistic Sculptures</p>
+        <p><strong>Exhibitions:</strong> Global Sculpture Fair, Art & Metal Expo</p>
+        <h4 style="text-align: center;">My Artworks</h4>
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <a href="assets/gwork4.jpg" target="_blank">
+              <img src="assets/gwork4.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4 mb-3">
+            <a href="assets/gwork10.jpg" target="_blank">
+              <img src="assets/gwork10.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4 mb-3">
+            <a href="assets/gwork12.jpg" target="_blank">
+              <img src="assets/gwork12.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4 ">
+            <a href="assets/gwork3.jpg" target="_blank">
+              <img src="assets/gwork3.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="assets/artwork2.jpg" target="_blank">
+              <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="assets/artwork3.jpg" target="_blank">
+              <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="artist3Modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="artist3Label">Jackson Pollock - Photographer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/artist3.jpg" class="img-fluid mb-3 rounded">
+        <p><strong>Bio:</strong> Jackson Pollock captures the beauty of life through photography.</p>
+        <p><strong>Art Style:</strong> Street Photography, Landscape</p>
+        <p><strong>Exhibitions:</strong> World Photography Expo, Lens Festival</p>
+        <h4 style="text-align: center;">My Artworks</h4>
+        <div class="row justify-content-center">
+          <div class="col-4 mb-3">
+            <a href="assets/artwork1.jpg" target="_blank">
+              <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4 mb-3">
+            <a href="assets/artwork2.jpg" target="_blank">
+              <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4 mb-3">
+            <a href="assets/artwork3.jpg" target="_blank">
+              <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="assets/artwork1.jpg" target="_blank">
+              <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="assets/artwork2.jpg" target="_blank">
+              <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+          <div class="col-4 ">
+            <a href="assets/artwork3.jpg" target="_blank">
+              <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="artist4Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist4Label">Yayoi Kusama - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist4.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Yayoi Kusama is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artist5Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist5Label">Andy Warhol - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist5.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Andy Warhol is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artist6Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist6Label">Mary Cassatt - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist6.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Mary Cassatt is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artist7Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist7Label">Salvador Dalí - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist7.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Salvador Dalí is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artist8Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist8Label">Frida Kahlo - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist8.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Frida Kahlo is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artist9Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist9Label">Louise Bourgeois - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist9.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Louise Bourgeois is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artist10Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist10Label">Hilma af Klint - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist10.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Hilma af Klint is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artist11Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist11Label">Tamara de Lempicka - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist11.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Tamara de Lempicka is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="artist12Modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="artist12Label">Pablo Picasso - Contemporary Painter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/artist12.jpg" class="img-fluid mb-3 rounded">
+          <p><strong>Bio:</strong> Pablo Picasso is a famous contemporary painter known for abstract masterpieces.</p>
+          <p><strong>Art Style:</strong> Modern, Abstract</p>
+          <p><strong>Exhibitions:</strong> Art Expo 2024, Modern Art Museum</p>
+          <h4 style="text-align: center;">My Artworks</h4>
+          <div class="row justify-content-center">
+            <div class="col-4 mb-3">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork1.jpg" target="_blank">
+                <img src="assets/artwork1.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="assets/artwork2.jpg" target="_blank">
+                <img src="assets/artwork2.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+            <div class="col-4 ">
+              <a href="assets/artwork3.jpg" target="_blank">
+                <img src="assets/artwork3.jpg" class="artwork-img img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-1">
+    <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>
